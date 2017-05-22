@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>ChromeChek's Popup</title>
+<style>
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 100%;
+}
+
+.scan_box { /* avoid an excessively wide status text */
+	white-space: pre;
+	text-overflow: ellipsis;
+	/*overflow: hidden;*/
+	max-width: 1000px;
+	height: 28px;
+	padding-top: 0px;
+	padding-left: 10px;
+	color: #28b499;
+	line-height: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	padding-bottom: 25px;
+}
+
+h2 {
+	color: #28b400;
+}
+
+h1 {
+	color: #28b450;
+}
+
+</style>
+<script src="popup.js"></script>
+</head>
+<body>
+	<h2 id="ChromeCheckerTitle">ChromeChecker Results</h2>		
+		
+		<h1 id="URL Check">URL Check</h1>
+		
+	<div class="scan_box" id="url_status"></div>
+	
+		<h1 id="HTML Code Scan">HTML Code Scan</h1>
+		
+	<div class="scan_box" id="html_status"></div>
+</body>
+</html>
+
